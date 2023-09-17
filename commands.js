@@ -24,12 +24,17 @@ const rest = new REST().setToken(token);
 			{ body: commands },
 		);
 
-        const data2 = await rest.put(
+        	const data2 = await rest.put(
 			Routes.applicationGuildCommands(clientId, "516977525906341928"),
 			{ body: commands },
 		);
 
-		console.log(`Successfully reloaded ${data.length} and ${data2.length} application (/) commands.`);
+		const data3 = await rest.put(
+			Routes.applicationGuildCommands(clientId, "1001847734766145607"),
+			{ body: commands },
+		);
+
+		console.log(`Successfully reloaded ${data.length}, ${data2.length} and ${data3.length} application (/) commands.`);
 	} catch (error) {
 		// And of course, make sure you catch and log any errors!
 		console.error(error);
