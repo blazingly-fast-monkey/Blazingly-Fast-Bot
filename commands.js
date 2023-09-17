@@ -34,7 +34,7 @@ const rest = new REST().setToken(token);
 			{ body: commands },
 		);
 
-		console.log(`Successfully reloaded ${data.length}, ${data2.length} and ${data3.length} application (/) commands.`);
+		console.log(`Successfully reloaded ${data.length} and ${data3.length} application (/) commands.`);
 	} catch (error) {
 		// And of course, make sure you catch and log any errors!
 		console.error(error);
