@@ -24,10 +24,10 @@ const rest = new REST().setToken(token);
 			{ body: commands },
 		);
 
-        	const data2 = await rest.put(
-			Routes.applicationGuildCommands(clientId, "516977525906341928"),
-			{ body: commands },
-		);
+  //       	const data2 = await rest.put(
+		// 	Routes.applicationGuildCommands(clientId, "516977525906341928"),
+		// 	{ body: commands },
+		// );
 
 		const data3 = await rest.put(
 			Routes.applicationGuildCommands(clientId, "1001847734766145607"),
